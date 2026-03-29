@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+
+		<style>
+			/* only for prez, not for speaker view */
+			@media screen and (min-width: 1500px) {
+				.slides {
+					width: 88% !important;
+				}
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5 {
+				text-transform: none !important;
+			}
+
+			ol,
+			ul {
+				font-size: 150%;
+			}
+
+			i {
+				font-style: italic;
+			}
+
+			.opacity-hidden {
+				opacity: 0;
+			}
+
+			blockquote {
+				padding: 5px 15px !important;
+			}
+
+			.big-size {
+				font-size: 12rem !important;
+			}
+
+			.bold {
+				font-size: 1.2em;
+				font-style: italic;
+				font-weight: bold;
+			}
+
+			.small {
+				font-size: 0.5em;
+			}
+
+			.big {
+				font-size: 2em;
+			}
+
+			.fire {
+				color: #e9083e;
+
+				background: linear-gradient(
+					90deg,
+					rgb(255, 103, 35) 0%,
+					rgb(233, 8, 62) 100% /* rgb(255, 176, 46) 10% */
+				);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.fire-success {
+				color: #28a745;
+
+				background: linear-gradient(90deg, rgb(53, 149, 131) 0%, rgb(40, 167, 69) 100%);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.react {
+				color: #58c4dc;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h2>Arkitekturen som gjorde <span class="react">React</span> gøy igjen</h2>
+						<h2><span class="tet">Tet</span>/<span class="ruter">Ruter</span></h2>
+					</section>
+					<section>1234</section>
+				</section>
+				<section>Slide 2</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/notes.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="dist/plugin/highlight.js"></script>
+		<link rel="stylesheet" href="product-colors.css" />
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			});
+		</script>
+	</body>
+</html>

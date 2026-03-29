@@ -1,0 +1,347 @@
+.typescript {
+  color: #007acc !important;
+}
+
+.bcc {
+  color: #2b6abc !important;
+}
+
+.rxjsc {
+  color: #c1185a;
+}
+
+.angular {
+  color: #dd0031 !important;
+}
+
+.webrtc-orange {
+  color: #ff6600 !important;
+}
+
+.html {
+  color: #f1672c !important;
+}
+
+.css {
+  color: #008fd5 !important;
+}
+
+.js {
+  color: #8ace17 !important;
+}
+
+.kanban {
+  color: #ec2a48 !important;
+}
+
+.elvia {
+  color: #28f400 !important;
+}
+
+.backstop {
+  color: #676156 !important;
+}
+
+.major-c {
+  color: #b70010 !important;
+}
+.minor-c {
+  color: #26881f !important;
+}
+.patch-c {
+  color: #cccccc !important;
+}
+
+.github-actions {
+  color: rgb(32, 136, 255) !important;
+}
+
+.scss {
+  color: #cf649a !important;
+}
+
+.dark-theme {
+  /* color: #000000 !important; */
+}
+
+.prettier {
+  color: rgb(198, 149, 200) !important;
+}
+
+.vue {
+  color: #4fc08d !important;
+}
+
+.react {
+  color: #5ed4f4 !important;
+}
+
+.web-components {
+  color: #f06707 !important;
+}
+
+.cli {
+  color: #00ff00 !important;
+}
+
+.open-source {
+  color: #3ba137 !important;
+}
+
+.git {
+  color: #f05033 !important;
+}
+
+.computas {
+  color: #28d0f5 !important;
+}
+
+.ie {
+  color: #fad548 !important;
+}
+
+.frameworks {
+  background: linear-gradient(90deg, #4fc08d 25%, #dd0031 35%, #dd0031 65%, #5ed4f4 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.attribute {
+  color: #8cdcfe !important;
+}
+
+.event {
+  color: #4ebc7c !important;
+}
+
+.function {
+  color: #dccd79 !important;
+}
+
+.slot {
+  color: #3f9cd6 !important;
+}
+
+.polymer {
+  color: #ff4470 !important;
+}
+
+.environment {
+  color: #81bc02 !important;
+}
+
+.nodejs {
+  color: #43853d !important;
+}
+
+.sourcetree {
+  color: #2684ff !important;
+}
+
+.vscode {
+  color: #23a7f2 !important;
+}
+
+.money {
+  color: #85bb65 !important;
+}
+
+.npm {
+  color: #cb3837 !important;
+}
+
+.firebase {
+  color: #ffca28 !important;
+}
+
+.material-icons {
+  color: #00579b !important;
+}
+
+.microsoft {
+  color: #00a4ef !important;
+}
+
+.folder {
+  color: #f8d775 !important;
+}
+
+.devops {
+  /* https://www.color-hex.com/color-palette/30628 */
+  color: #6293c9 !important;
+}
+
+.bug {
+  color: #e3483a !important;
+}
+.feature {
+  color: #25a9fa !important;
+}
+.terraform {
+  color: #623ce4 !important;
+}
+.application-insights {
+  color: #7030a0 !important;
+}
+.confluence {
+  color: #0049b0 !important;
+}
+.slack {
+  color: #4a154b !important;
+}
+.gold {
+  color: #ffd700 !important;
+}
+.trust {
+  color: #007acc !important;
+}
+.castle {
+  color: #7c7c7c !important;
+}
+.toxic {
+  color: #61df26 !important;
+}
+.logrocket {
+  color: #754abc !important;
+}
+.docker {
+  color: #2392e6 !important;
+}
+
+.interference,
+.error {
+  color: #ff0908 !important;
+}
+
+.jpro {
+  color: #fe7a0c !important;
+}
+.netscape {
+  color: #358189 !important;
+}
+.success {
+  color: #4bb543 !important;
+}
+
+.json {
+  color: #8f719f !important;
+}
+.solid {
+  color: #848484 !important;
+}
+
+.efficiency {
+  color: #f7b500 !important;
+  color: #43bc43 !important;
+}
+
+.ai {
+  color: #f9a825 !important;
+}
+
+.grammarly {
+  color: #34ba96 !important;
+}
+.aof {
+  color: #094c51 !important;
+}
+
+.copilot {
+  background-image: linear-gradient(45deg, #73b4d6, #885de6);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.trunk {
+  color: #5677fc !important;
+}
+
+.netlify {
+  color: #2fb5bb !important;
+}
+
+.amplify {
+  color: #ec7211 !important;
+}
+
+.heroku {
+  color: #79589f !important;
+}
+
+.jira {
+  color: #2684ff !important;
+}
+
+.linux {
+  color: #f5be04 !important;
+}
+
+.windows {
+  color: #0084dc !important;
+}
+
+.mac {
+  color: #999999 !important;
+}
+
+.stable {
+  color: #808080 !important;
+}
+
+.designer {
+  color: #ff4088 !important;
+  /* color: #F04E23 !important; */
+}
+
+.water {
+  color: #00b0ff !important;
+  color: #0e87cc !important;
+}
+
+.knip {
+  color: #f56e0f !important;
+}
+
+.biome {
+  color: #60a5fa !important;
+}
+
+.adhd {
+  color: #ff7f00 !important;
+}
+
+.autism {
+  /* background: linear-gradient(to right, #6a11cb 0%, #2575fc 50%, #00d2ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #D4AF37 !important;
+}
+
+.dysleksi {
+  color: #C0C0C0 !important;
+}
+
+.dyskalkuli {
+  color: #D32F2F !important;
+}
+
+.tourette {
+  color: #008080 !important;
+}
+
+.bipolar {
+  color: #4CAF50 !important;
+}
+
+.ruter {
+  color: #e80909 !important;
+}
+
+.tet {
+  color: #998ed2 !important;
+}
