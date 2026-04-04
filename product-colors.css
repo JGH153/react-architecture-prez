@@ -346,6 +346,14 @@
 	color: #998ed2 !important;
 }
 
+.vite {
+	color: #BD34FE !important;
+}
+
+.vitest {
+	color: #6E9F18 !important;
+}
+
 .architecture {
 	background: linear-gradient(90deg, #f5a623, #d4a843);
 	-webkit-background-clip: text;
