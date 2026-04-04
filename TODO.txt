@@ -1,0 +1,2 @@
+AI part is weak
+More on why not next, RSC and axios
