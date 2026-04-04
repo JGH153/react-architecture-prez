@@ -346,6 +346,14 @@
 	color: #998ed2 !important;
 }
 
+.graphql {
+	color: #E10098 !important;
+}
+
+.rest {
+	color: #009688 !important;
+}
+
 .vite {
 	color: #BD34FE !important;
 }
