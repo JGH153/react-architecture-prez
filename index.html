@@ -144,7 +144,6 @@
 						<h2 class="fragment">Litt <span class="error">saktere</span> i starten</h2>
 						<h2 class="fragment">Men går <span class="success">ikke</span> ned videre</h2>
 						<h2 class="fragment">Oppstår <span class="success">underveis</span></h2>
-						<!-- <h2 class="fragment fire-success">Fleksibilitet</h2> -->
 					</section>
 					<section data-auto-animate>
 						<h1><span class="">God</span> <span class="architecture">arkitektur</span> 🏗️</h1>
@@ -163,51 +162,62 @@
 						<h2 class="fragment">Driver vi egentlig med <span class="error">adgile</span>?</h2>
 						<h2 class="fragment">Feature <span class="error">factory</span></h2>
 					</section>
+					<section data-background="img/factory.png" data-background-size="contain"></section>
 				</section>
 
 				<section>
 					<section>
-						<h1>Gir dette mening?</h1>
-						<h2 class="fragment">Next, RSC, Axios</h2>
-						<h2 class="fragment">Claude code</h2>
+						<h1>Gir dette <span class="architecture">mening</span>?</h1>
+						<h2 class="fragment">
+							Next, <span class="rsc">RSC</span>, <span class="axios">Axios</span>
+						</h2>
+						<h2 class="fragment"><span class="claude">Claude</span> code</h2>
 					</section>
 					<section>
 						<h1>Next</h1>
-						<h2 class="fragment">Static pages and SEO</h2>
-						<h2 class="fragment">More complex, no longer static</h2>
+						<h2 class="fragment"><span class="static">Static</span> pages and SEO</h2>
+						<h2 class="fragment">More complex, no longer <span class="static">static</span></h2>
 						<h2 class="fragment">Need backend?</h2>
-						<h2 class="fragment">Can switch later</h2>
+						<h2 class="fragment">Can <span class="architecture">switch</span> later</h2>
 						<!-- TODO more -->
 					</section>
 					<section>
 						<h2><span class="react">React</span> Server Components</h2>
-						<h2 class="fragment">Static content</h2>
+						<h2 class="fragment"><span class="static">Static</span> content</h2>
 						<h2 class="fragment">CVE-2025-55182</h2>
 						<!-- TODO more -->
 					</section>
 					<section>
-						<h1>Axios</h1>
+						<h1><span class="axios">Axios</span></h1>
 						<h2 class="fragment">Native fetch</h2>
 						<h2 class="fragment">Supply chain attack</h2>
 						<!-- TODO more -->
 					</section>
 					<section>
-						<h1>Date-fns</h1>
-						<h2 class="fragment">Temporal really soon</h2>
+						<h1>Date-fns 📅</h1>
+						<h2 class="fragment">Temporal really <span class="success">soon</span></h2>
+						<pre
+							class="fragment"
+						><code class="language-typescript">const now = Temporal.Now.plainDateTimeISO();
+console.log(now.toString()); // 2026-04-04T14:30:00
+
+const today = Temporal.Now.plainDateISO();
+console.log(today.toString()); // 2026-04-04
+						</code></pre>
 					</section>
 					<section>
-						<h1>Claude code</h1>
+						<h1><span class="claude">Claude</span> code</h1>
 						<h2 class="fragment">TODO!</h2>
 					</section>
 				</section>
 				<section>
 					<section data-auto-animate>
-						<h1>Drømmestacken</h1>
+						<h1 class="architecture">Drømmestacken</h1>
 						<h2 class="fragment">
 							<span class="typescript">TypeScript</span> & <span class="react">React</span> &
-							Tailwind
+							<span class="tailwind">Tailwind</span>
 						</h2>
-						<h2 class="fragment">TanstackQuery</h2>
+						<h2 class="fragment"><span class="tanstack">TanStack Query</span></h2>
 						<h2 class="fragment">Next vs <span class="react">React</span> Router</h2>
 						<h2 class="fragment">
 							<span class="vitest">Vitest</span>, <span class="biome">Biome</span> &
@@ -217,43 +227,46 @@
 					<section data-auto-animate>
 						<h2>
 							<span class="typescript">TypeScript</span> & <span class="react">React</span> &
-							Tailwind
+							<span class="tailwind">Tailwind</span>
 						</h2>
-						<h2 class="fragment">Strict as possible</h2>
-						<h2 class="fragment">Design system with Tailwind</h2>
+						<h2 class="fragment"><span class="typescript">Strict</span> as possible</h2>
+						<h2 class="fragment">Design system with <span class="tailwind">Tailwind</span></h2>
 					</section>
 					<section>
-						<h1>State management</h1>
+						<h1><span class="architecture">State</span> management</h1>
 						<h2 class="fragment"><span class="react">React</span> context</h2>
-						<h2 class="fragment">Never redux</h2>
-						<h2 class="fragment">Maybe Zustand</h2>
-						<h2 class="fragment">Tanstack query</h2>
+						<h2 class="fragment">Never <span class="redux">redux</span></h2>
+						<h2 class="fragment">Maybe <span class="zustand">Zustand</span></h2>
+						<h2 class="fragment"><span class="tanstack">TanStack Query</span></h2>
 					</section>
 					<section>
 						<h1>Next vs <span class="react">React</span> Router</h1>
-						<h1 class="fragment"><span class="react">React</span> Router when CSR</h1>
-						<h1 class="fragment">Next when backend for frontend</h1>
+						<h2 class="fragment"><span class="react">React</span> Router when CSR</h2>
+						<h2 class="fragment">
+							Next when <span class="architecture">backend for frontend</span>
+						</h2>
 					</section>
 					<section>
-						<h1>Tools</h1>
+						<h1>Tools 🛠️</h1>
 						<h2 class="fragment">
-							<span class="biome">Biome</span> over <span class="prettier">prettier</span> & eslint
+							<span class="biome">Biome</span> over <span class="prettier">prettier</span> &
+							<span class="eslint">eslint</span>
 						</h2>
 						<h2 class="fragment"><span class="knip">Knip</span></h2>
 						<h2 class="fragment"><span class="vite">Vite</span></h2>
 					</section>
-					<section>
-						<h1>Folder structure</h1>
+					<section data-auto-animate>
+						<h1>Folder <span class="architecture">structure</span></h1>
 						<h2 class="fragment">Pages</h2>
-						<h2 class="fragment">Components</h2>
-						<h2 class="fragment">Hooks</h2>
+						<h2 class="fragment react">Components</h2>
+						<h2 class="fragment react">Hooks</h2>
 						<h2 class="fragment">Utils</h2>
-						<h2 class="fragment">Types</h2>
+						<h2 class="fragment typescript">Types</h2>
 					</section>
-					<section>
-						<h2>Types</h2>
-						<h2 class="fragment">Avoid d.ts</h2>
-						<h2 class="fragment">Co-locate!</h2>
+					<section data-auto-animate>
+						<h2 class="typescript">Types</h2>
+						<h2 class="fragment">Avoid <span class="error">d.ts</span></h2>
+						<h2 class="fragment architecture">Co-locate!</h2>
 						<pre class="fragment"><code class="language-typescript">export type SimulationState = {
   buildings: Building[];
 };
@@ -270,71 +283,77 @@ const incrementOrderedWares = ({
 				<section>
 					<section>
 						<h1><span class="ai">AI</span> elefanten i rommet</h1>
-						<h2 class="fragment">Produktivitet over resultater</h2>
-						<h2 class="fragment">Flom av ulest kode</h2>
-						<h2 class="fragment">Vi er nå systemutviklere</h2>
+						<h2 class="fragment">
+							<span class="error">Produktivitet</span> over <span class="success">resultater</span>
+						</h2>
+						<h2 class="fragment">Flom av <span class="error">ulest</span> kode</h2>
+						<h2 class="fragment">Vi er nå <span class="architecture">systemutviklere</span></h2>
 					</section>
 					<section>
 						<h1><span class="ai">AI</span> trenger struktur</h1>
 						<h2 class="fragment"><span class="architecture">Arkitektur</span> viktigere</h2>
-						<h2 class="fragment">Blind på foss av kode</h2>
-						<h2 class="fragment">Lettere på mindre prosjekter</h2>
+						<h2 class="fragment">Større <span class="architecture">bilde</span></h2>
+						<h2 class="fragment">Lettere på <span class="success">mindre</span> prosjekter</h2>
 					</section>
 					<section>
-						<h1>Claude code</h1>
-						<h2 class="fragment">Less is more</h2>
+						<h1><span class="claude">Claude</span> code</h1>
+						<h2 class="fragment">Less is <span class="success">more</span></h2>
 					</section>
 					<section>
-						<h1>Claude.md</h1>
-						<h2 class="fragment">Tech Stack + Architecture overview</h2>
-						<h2 class="fragment">Project Structure, not all files</h2>
+						<h1><span class="claude">Claude</span>.md</h1>
+						<h2 class="fragment">
+							Tech Stack + <span class="architecture">Architecture</span> overview
+						</h2>
+						<h2 class="fragment">
+							Project <span class="architecture">Structure</span>, not all files
+						</h2>
 						<h2 class="fragment">Code Conventions</h2>
 						<h2 class="fragment">Testing Strategy</h2>
-						<h2 class="fragment">Keep CLAUDE.md up to date</h2>
+						<h2 class="fragment">Keep <span class="claude">CLAUDE</span>.md up to date</h2>
 					</section>
 					<section>
-						<h1>Utdatert dokumentasjon</h1>
-						<h2 class="fragment">Farligere enn ingen</h2>
-						<h2 class="fragment">Samme med Claude</h2>
-						<h2 class="fragment">Skills blir fort utdatert</h2>
+						<h1><span class="error">Utdatert</span> dokumentasjon</h1>
+						<h2 class="fragment"><span class="error">Farligere</span> enn ingen</h2>
+						<h2 class="fragment">Samme med <span class="claude">Claude</span></h2>
+						<h2 class="fragment">Skills blir fort <span class="error">utdatert</span></h2>
 					</section>
 					<section>
-						<h1>Dokumentasjon</h1>
-						<h2 class="fragment">Claude.md</h2>
+						<h1>Dokumentasjon 📚</h1>
+						<h2 class="fragment"><span class="claude">Claude</span>.md</h2>
 						<h2 class="fragment">Readme.md</h2>
-						<h2 class="fragment">architecture.md</h2>
+						<h2 class="fragment"><span class="architecture">architecture</span>.md</h2>
 					</section>
 					<section>
-						<h2>Alle <span class="ai">AI</span> råd er utdatert om 6 måneder</h2>
+						<h2>Alle <span class="ai">AI</span> råd er <span class="error">utdatert</span> om 6 måneder</h2>
+						<!-- TODO more? -->
 					</section>
 				</section>
 				<section>
 					<section>
-						<h1>Migrere til stacken</h1>
+						<h1>Migrere til <span class="architecture">stacken</span></h1>
 						<h2 class="fragment">
 							Aldri skriv om fra <span class="angular">Angular</span> til
 							<span class="react">React</span>
 						</h2>
 						<h2 class="fragment">Lift n shift <span class="architecture">arkitektur</span></h2>
-						<h2 class="fragment">Små skritt</h2>
-						<h2 class="fragment">Dependency pruning</h2>
+						<h2 class="fragment"><span class="success">Små</span> skritt</h2>
+						<h2 class="fragment">Dependency <span class="success">pruning</span></h2>
 					</section>
 					<section>
-						<h1>Big bang rewrite</h1>
+						<h1><span class="error">Big bang</span> rewrite</h1>
 						<blockquote class="fragment">
 							The single worst strategic mistake that any software company can make
 						</blockquote>
-						<h2 class="fragment">Stopp maks 3 måneder</h2>
-						<h2 class="fragment">Neste feature betaler</h2>
+						<h2 class="fragment">Stopp <span class="error">maks</span> 3 måneder</h2>
+						<h2 class="fragment"><span class="success">Neste</span> feature betaler</h2>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h2>Du trenger <span class="architecture">mindre</span> enn du tror</h2>
-						<h2 class="fragment">Jan <span class="fire-success">Greger</span> Hemb</h2>
+						<h2 class="fragment">Jan <span class="success">Greger</span> Hemb</h2>
 						<h2 class="fragment jpro">JPro</h2>
-						<!-- <h2 class="fragment"><span class="fire-success">Curious Programming</span> 📺</h2> -->
-						<h2 class="fragment"><span class="fire-success">Takk</span> for meg 👋</h2>
+						<h2 class="fragment"><span class="success">Takk</span> for meg 👋</h2>
 					</section>
 				</section>
 			</div>

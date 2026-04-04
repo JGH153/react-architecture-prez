@@ -288,7 +288,7 @@
 	color: #999999 !important;
 }
 
-.stable {
+.stable, .static  {
 	color: #808080 !important;
 }
 
@@ -344,6 +344,38 @@
 
 .tet {
 	color: #998ed2 !important;
+}
+
+.tailwind {
+	color: #38BDF8 !important;
+}
+
+.eslint {
+	color: #4B32C3 !important;
+}
+
+.redux {
+	color: #764ABC !important;
+}
+
+.zustand {
+	color: #582d3e !important;
+}
+
+.tanstack {
+	color: #EF4444 !important;
+}
+
+.rsc {
+	color: #3b82f6 !important;
+}
+
+.axios {
+	color: #5A29E4 !important;
+}
+
+.claude {
+	color: #D97757 !important;
 }
 
 .graphql {
