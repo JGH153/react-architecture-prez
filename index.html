@@ -70,6 +70,9 @@
 			.code-wrapper {
 				width: 70% !important;
 			}
+			.blockquote {
+				width: 50% !important;
+			}
 		</style>
 	</head>
 	<body>
@@ -120,7 +123,7 @@
 						<h2 class="fragment">Fokus på <span class="architecture">arkitektur</span></h2>
 						<h2 class="fragment">Resume <span class="error">driven</span> development</h2>
 						<h2 class="fragment">
-							<span class="success">Lett</span> for en er et <span class="error">mareritt</span> for
+							<span class="success">Lett</span> for en, <span class="error">mareritt</span> for
 							annen
 						</h2>
 					</section>
@@ -181,28 +184,45 @@
 						<h2 class="fragment">
 							Next, <span class="rsc">RSC</span>, <span class="axios">Axios</span>
 						</h2>
-						<h2 class="fragment"><span class="claude">Claude</span> code</h2>
 					</section>
 					<section>
-						<h1>Next</h1>
-						<h2 class="fragment"><span class="static">Static</span> pages and SEO</h2>
-						<h2 class="fragment">Mer kompleksitet <span class="static">static</span></h2>
-						<h2 class="fragment">Trenger backend?</h2>
+						<h1><span class="next">Next</span> <span class="success">fordeler</span></h1>
+						<h2 class="fragment">SSR/SSG ut av boksen</h2>
+						<h2 class="fragment">Caching</h2>
+						<h2 class="fragment"><span class="static">Statiske</span> sider og SEO</h2>
+						<h2 class="fragment"><span class="vercel">Vercel</span></h2>
+						<h2 class="fragment">Filbasert routing</h2>
+					</section>
+					<section>
+						<h1><span class="next">Next</span> <span class="error">ulemper</span></h1>
+						<h2 class="fragment">Mer <span class="error">kompleksitet</span></h2>
+						<h2 class="fragment">
+							<span class="vercel">Vercel</span> <span class="error">lock-in</span>
+						</h2>
+						<h2 class="fragment">Trenger <span class="architecture">backend</span>?</h2>
+						<h2 class="fragment">CVE-2025-29927 (<span class="error">9.1/10</span>)</h2>
 						<h2 class="fragment">Kan <span class="architecture">bytte</span> senere</h2>
-						<!-- TODO more -->
 					</section>
 					<section>
-						<h2><span class="react">React</span> Server Components</h2>
-						<h2 class="fragment"><span class="static">Static</span> content</h2>
-						<h2 class="fragment">CVE-2025-55182</h2>
-						<!-- TODO more -->
+						<h2><span class="react">React</span> Server Components ✅</h2>
+						<h2 class="fragment"><span class="success">Mindre</span> JavaScript</h2>
+						<h2 class="fragment"><span class="success">Mindre</span> useEffect</h2>
+						<h2 class="fragment"><span class="success">Direkte</span> datatilgang</h2>
+						<h2 class="fragment"><span class="success">Stor</span> satsning</h2>
+					</section>
+					<section>
+						<h2><span class="react">React</span> Server Components ❌</h2>
+						<h2 class="fragment">Mye høyere <span class="error">kompleksitet</span></h2>
+						<h2 class="fragment"><span class="error">Krever</span> ofte Next</h2>
+						<h2 class="fragment error">Debugging</h2>
+						<h2 class="fragment">CVE-2025-55182 (<span class="error">10/10</span>)</h2>
 					</section>
 					<section data-auto-animate>
 						<h1><span class="axios">Axios</span></h1>
 						<h2 class="fragment"><span class="success">Native</span> fetch</h2>
 						<h2 class="fragment">Interceptors og filopplasting 📂</h2>
+						<h2 class="fragment">Bundle <span class="error">size</span></h2>
 						<h2 class="fragment">Supply chain <span class="error">attack</span></h2>
-						<!-- TODO more -->
 					</section>
 
 					<section data-auto-animate>
@@ -226,7 +246,10 @@ console.log(today.toString()); // 2026-04-04
 					</section>
 					<section>
 						<h1><span class="claude">Claude</span> code</h1>
-						<h2 class="fragment">TODO!</h2>
+						<h2 class="fragment success">Fremtiden</h2>
+						<h2 class="fragment">Med hjernen i <span class="architecture">mode 2</span> 🧠</h2>
+						<h2 class="fragment">Fortsatt litt <span class="error">kasino</span></h2>
+						<h2 class="fragment">Mer <span class="architecture">senere</span>...</h2>
 					</section>
 				</section>
 				<section>
@@ -237,7 +260,9 @@ console.log(today.toString()); // 2026-04-04
 							<span class="tailwind">Tailwind</span>
 						</h2>
 						<h2 class="fragment"><span class="tanstack">TanStack Query</span></h2>
-						<h2 class="fragment">Next vs <span class="react">React</span> Router</h2>
+						<h2 class="fragment">
+							<span class="next">Next</span> vs <span class="react">React</span> Router
+						</h2>
 						<h2 class="fragment">
 							<span class="vitest">Vitest</span>, <span class="biome">Biome</span> &
 							<span class="knip">Knip</span>
@@ -260,12 +285,27 @@ console.log(today.toString()); // 2026-04-04
 						<h2 class="fragment">Mulig <span class="zustand">Zustand</span></h2>
 					</section>
 					<section>
-						<h1>Next vs <span class="react">React</span> Router</h1>
-						<h2 class="fragment"><span class="react">React</span> Router when CSR</h2>
-						<h2 class="fragment">
-							Next when <span class="architecture">backend for frontend</span>
-						</h2>
-						<!-- TODO more! -->
+						<h1><span class="next">Next</span> vs <span class="react">React</span> Router</h1>
+					</section>
+					<section>
+						<h1>Hvorfor <span class="next">Next</span></h1>
+						<h2 class="fragment"><span class="architecture">Backend</span> for frontend</h2>
+						<h2 class="fragment architecture">Middleware</h2>
+						<h2 class="fragment architecture">Økosystemet</h2>
+						<h2 class="fragment architecture">SSR/SSG</h2>
+					</section>
+					<section>
+						<h1>Hvorfor <span class="react">React</span> Router</h1>
+						<h2 class="fragment"><span class="success">Enkel</span> mental modell</h2>
+						<h2 class="fragment"><span class="static">Statiske</span> filer</h2>
+						<h2 class="fragment"><span class="vite">Vite</span></h2>
+						<h2 class="fragment"><span class="success">Null</span> vendor lock-in</h2>
+					</section>
+					<section>
+						<h1><span class="next">Next</span> vs <span class="react">React</span> Router</h1>
+						<h2 class="fragment">Trenger du <span class="architecture">backend</span>?</h2>
+						<h2 class="fragment">Liker du <span class="architecture">file based routing</span>?</h2>
+						<h2 class="fragment">Liker du <span class="vercel">Vercel</span>?</h2>
 					</section>
 					<section>
 						<h1>Tools 🛠️</h1>
@@ -286,7 +326,7 @@ console.log(today.toString()); // 2026-04-04
 					</section>
 					<section data-auto-animate>
 						<h2 class="typescript">Types</h2>
-						<h2 class="fragment">Avoid <span class="error">d.ts</span></h2>
+						<h2 class="fragment">Unngå <span class="error">d.ts</span></h2>
 						<h2 class="fragment architecture">Co-locate!</h2>
 						<pre class="fragment"><code class="language-typescript">export type SimulationState = {
   buildings: Building[];
@@ -298,17 +338,25 @@ const incrementOrderedWares = ({
   state: SimulationState;
 }): void => {};
 						</code></pre>
-						<!-- TODO code example! -->
 					</section>
 				</section>
 				<section>
-					<section>
+					<section data-auto-animate>
 						<h1><span class="ai">AI</span> elefanten i rommet</h1>
 						<h2 class="fragment">
 							<span class="error">Produktivitet</span> over <span class="success">resultater</span>
 						</h2>
-						<h2 class="fragment">Flom av <span class="error">ulest</span> kode</h2>
 						<h2 class="fragment">Vi er nå <span class="architecture">systemutviklere</span></h2>
+						<h2 class="fragment">Flom av <span class="error">ulest</span> kode</h2>
+					</section>
+					<section data-auto-animate>
+						<h2>Flom av <span class="error">ulest</span> kode</h2>
+						<h2 class="fragment">Fungerende kode over <span class="error">sikker</span> kode</h2>
+						<h2 class="fragment"><span class="error">dangerouslySetInnerHTML</span></h2>
+						<h2 class="fragment">Prompt <span class="error">injection</span></h2>
+						<h2 class="fragment">
+							<span class="ai">AI</span> elsker open soruce <span class="error">secrets</span>
+						</h2>
 					</section>
 					<section>
 						<h1><span class="ai">AI</span> trenger struktur</h1>
@@ -319,6 +367,8 @@ const incrementOrderedWares = ({
 					<section>
 						<h1><span class="claude">Claude</span> code</h1>
 						<h2 class="fragment">Less is <span class="success">more</span></h2>
+						<h2 class="fragment">Context is<span class="architecture">king</span></h2>
+						<h2 class="fragment">Harness is the<span class="architecture">future</span></h2>
 					</section>
 					<section>
 						<h1><span class="claude">Claude</span>.md</h1>
@@ -349,7 +399,9 @@ const incrementOrderedWares = ({
 							Alle <span class="ai">AI</span> råd er <span class="error">utdatert</span> om 6
 							måneder
 						</h2>
-						<!-- TODO more? -->
+						<h2 class="fragment">
+							Lær <span class="architecture">prinsippene</span>, ikke verktøyene
+						</h2>
 					</section>
 				</section>
 				<section>
@@ -359,13 +411,13 @@ const incrementOrderedWares = ({
 							Aldri skriv om fra <span class="angular">Angular</span> til
 							<span class="react">React</span>
 						</h2>
-						<h2 class="fragment">Lift n shift <span class="architecture">arkitektur</span></h2>
+						<h2 class="fragment">Lift and shift <span class="architecture">arkitektur</span></h2>
 						<h2 class="fragment"><span class="success">Små</span> skritt</h2>
 						<h2 class="fragment">Dependency <span class="success">pruning</span></h2>
 					</section>
 					<section>
 						<h1><span class="error">Big bang</span> rewrite</h1>
-						<blockquote class="fragment">
+						<blockquote class="fragment blockquote">
 							The single worst strategic mistake that any software company can make
 						</blockquote>
 						<h2 class="fragment">Stopp <span class="error">maks</span> 3 måneder</h2>
