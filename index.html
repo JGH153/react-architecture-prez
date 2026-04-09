@@ -79,6 +79,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+					<section data-background="img/splashscreen.png" data-background-size="contain"></section>
 					<section>
 						<h2><span class="architecture">Arkitekturen</span> som gjorde</h2>
 						<h2><span class="react">React</span> gøy igjen</h2>
@@ -86,11 +87,17 @@
 					</section>
 				</section>
 				<section>
-					<section>
+					<section data-auto-animate>
 						<h1><span class="architecture">Første</span> dag</h1>
+						<h2 class="fragment"><span class="success">Tilrettelagt</span> Transport</h2>
 						<h2 class="fragment">
 							Ingen leier inn når sola <span class="architecture">skinner</span> ☀️
 						</h2>
+						<h1 class="fragment">Tatt over <span class="error">brått</span></h1>
+					</section>
+
+					<section data-auto-animate>
+						<h1>Tatt over <span class="error">brått</span></h1>
 						<h2 class="fragment">Periode med mye <span class="error">press</span></h2>
 						<h2 class="fragment">Mye <span class="error">gjeld</span></h2>
 						<h2 class="fragment">Mye <span class="error">skrik</span> etter features</h2>
@@ -104,7 +111,7 @@
 					<section>
 						<h1>Det var <span class="error">ikke gøy</span></h1>
 						<h2 class="fragment">
-							<span class="graphql">GraphQL</span> over <span class="rest">REST</span>
+							<span class="graphql">GraphQL</span> fremfor <span class="rest">REST</span>
 						</h2>
 						<h2 class="fragment">Giga <span class="react">React</span> context</h2>
 						<h2 class="fragment">
@@ -182,7 +189,8 @@
 					<section>
 						<h1>Gir dette <span class="architecture">mening</span>?</h1>
 						<h2 class="fragment">
-							Next, <span class="rsc">RSC</span>, <span class="axios">Axios</span>
+							Next, <span class="rsc">React Server Components</span>,
+							<span class="axios">Axios</span>
 						</h2>
 					</section>
 					<section>
@@ -204,7 +212,25 @@
 						<h2 class="fragment">Kan <span class="architecture">bytte</span> senere</h2>
 					</section>
 					<section>
+						<h2><span class="react">React</span> Server Components</h2>
+						<pre
+							class="fragment"
+						><code class="language-typescript">export default async function Posts() {
+  const posts = await db.post.findMany({
+    orderBy: { createdAt: 'desc' },
+    take: 10,
+  });
+
+  return (
+    <ul>
+      {posts.map(p => <li key={p.id}>{p.title}</li>)}
+    </ul>
+  );
+}</code></pre>
+					</section>
+					<section>
 						<h2><span class="react">React</span> Server Components ✅</h2>
+						<h2 class="fragment"><span class="success">Server</span> side rendering</h2>
 						<h2 class="fragment"><span class="success">Mindre</span> JavaScript</h2>
 						<h2 class="fragment"><span class="success">Mindre</span> useEffect</h2>
 						<h2 class="fragment"><span class="success">Direkte</span> datatilgang</h2>
@@ -225,8 +251,15 @@
 						<h2 class="fragment">Supply chain <span class="error">attack</span></h2>
 					</section>
 
+					<!-- Needed? -->
+					<section
+						data-background="img/supply-chain-attack.png"
+						data-background-size="contain"
+					></section>
+
 					<section data-auto-animate>
 						<h2>Supply chain <span class="error">attack</span></h2>
+						<pre class="fragment"><code class="language-bash">npm install axios</code></pre>
 						<h2 class="fragment"><span class="pnpm">Pnpm</span></h2>
 						<h2 class="fragment">Postinstall <span class="success">safety</span></h2>
 						<h2 class="fragment"><span class="pnpm">allowBuilds</span> list</h2>
@@ -247,7 +280,6 @@ console.log(today.toString()); // 2026-04-04
 					<section>
 						<h1><span class="claude">Claude</span> code</h1>
 						<h2 class="fragment success">Fremtiden</h2>
-						<h2 class="fragment">Med hjernen i <span class="architecture">mode 2</span> 🧠</h2>
 						<h2 class="fragment">Fortsatt litt <span class="error">kasino</span></h2>
 						<h2 class="fragment">Mer <span class="architecture">senere</span>...</h2>
 					</section>
@@ -275,6 +307,9 @@ console.log(today.toString()); // 2026-04-04
 						</h2>
 						<h2 class="fragment"><span class="typescript">Strict</span> som mulig</h2>
 						<h2 class="fragment">Tsconfig import <span class="typescript">paths</span></h2>
+						<pre class="fragment"><code class="language-typescript">
+							import { Button } from '@/components/Button';
+						</code></pre>
 						<h2 class="fragment">Design system med <span class="tailwind">Tailwind</span></h2>
 					</section>
 					<section>
@@ -283,6 +318,21 @@ console.log(today.toString()); // 2026-04-04
 						<h2 class="fragment"><span class="react">React</span> context</h2>
 						<h2 class="fragment">Aldri <span class="redux">redux</span></h2>
 						<h2 class="fragment">Mulig <span class="zustand">Zustand</span></h2>
+					</section>
+					<section>
+						<h2 class=""><span class="tanstack">TanStack Query</span></h2>
+						<pre class="fragment"><code class="language-typescript">
+// ❌ useEffect
+const [posts, setPosts] = useState([]);
+useEffect(() =&gt; { fetch('/api/posts').then(r =&gt; r.json()).then(setPosts) }, []);
+return &lt;ul&gt;{posts.map(p =&gt; &lt;li key={p.id}&gt;{p.title}&lt;/li&gt;)}&lt;/ul&gt;;
+						</code></pre>
+						<pre class="fragment"><code class="language-typescript">
+// ✅ TanStack Query
+const { data: posts } = usePosts();
+if (!posts) return &lt;&gt;Laster...&lt;/&gt;;
+return &lt;ul&gt;{posts.map(p =&gt; &lt;li key={p.id}&gt;{p.title}&lt;/li&gt;)}&lt;/ul&gt;;
+						</code></pre>
 					</section>
 					<section>
 						<h1><span class="next">Next</span> vs <span class="react">React</span> Router</h1>
@@ -308,7 +358,7 @@ console.log(today.toString()); // 2026-04-04
 						<h2 class="fragment">Liker du <span class="vercel">Vercel</span>?</h2>
 					</section>
 					<section>
-						<h1>Tools 🛠️</h1>
+						<h1>Verktøy 🛠️</h1>
 						<h2 class="fragment">
 							<span class="biome">Biome</span> over <span class="prettier">prettier</span> &
 							<span class="eslint">eslint</span>
@@ -332,7 +382,7 @@ console.log(today.toString()); // 2026-04-04
   buildings: Building[];
 };
 
-const incrementOrderedWares = ({
+export const simulateGame = ({
   state,
 }: {
   state: SimulationState;
@@ -367,20 +417,21 @@ const incrementOrderedWares = ({
 					<section>
 						<h1><span class="claude">Claude</span> code</h1>
 						<h2 class="fragment">Less is <span class="success">more</span></h2>
-						<h2 class="fragment">Context is<span class="architecture">king</span></h2>
-						<h2 class="fragment">Harness is the<span class="architecture">future</span></h2>
+						<h2 class="fragment">Context is <span class="architecture">king</span></h2>
+						<h2 class="fragment">Harness er <span class="architecture">fremtiden</span></h2>
+						<h2 class="fragment">Med hjernen i <span class="architecture">mode 2</span> 🧠</h2>
 					</section>
 					<section>
 						<h1><span class="claude">Claude</span>.md</h1>
 						<h2 class="fragment">
-							Tech Stack + <span class="architecture">Architecture</span> overview
+							Tech Stack + <span class="architecture">Arkitektur</span> oversikt
 						</h2>
 						<h2 class="fragment">
-							Project <span class="architecture">Structure</span>, not all files
+							Project <span class="architecture">Struktur</span>, ikke alle filer
 						</h2>
-						<h2 class="fragment">Code <span class="architecture">Conventions</span></h2>
-						<h2 class="fragment">Testing <span class="architecture">Strategy</span></h2>
-						<h2 class="fragment">Keep <span class="claude">CLAUDE</span>.md up to date</h2>
+						<h2 class="fragment">Code <span class="architecture">Konvensjoner</span></h2>
+						<h2 class="fragment">Testing <span class="architecture">Strategi</span></h2>
+						<h2 class="fragment">Hold <span class="claude">CLAUDE</span>.md oppdatert</h2>
 					</section>
 					<section>
 						<h1><span class="error">Utdatert</span> dokumentasjon</h1>
@@ -426,7 +477,10 @@ const incrementOrderedWares = ({
 				</section>
 				<section>
 					<section>
-						<h2>Du trenger <span class="architecture">mindre</span> enn du tror</h2>
+						<h2>Det du har er ofte <span class="success">bra nok</span></h2>
+						<h2 class="fragment">
+							Du trenger <span class="architecture">mindre</span> enn du tror
+						</h2>
 						<h2 class="fragment">Jan <span class="success">Greger</span> Hemb</h2>
 						<h2 class="fragment jpro">JPro</h2>
 						<h2 class="fragment"><span class="success">Takk</span> for meg 👋</h2>
