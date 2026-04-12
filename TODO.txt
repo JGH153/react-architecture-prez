@@ -1,10 +1,7 @@
 More illustrations, ike folder structure
 
-Out of place, dårlig flyt til:
-- Cognitive Load
-- Vi er ikke ærlige
+Trenger en Next  intro slide
 
-Første next kommer for bråyy
-
+Add Zod og React Hook Form 
 
 
