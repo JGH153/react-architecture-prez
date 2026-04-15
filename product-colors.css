@@ -416,3 +416,11 @@
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
+
+.react-hook-form {
+	color: #EC5990 !important;
+}
+
+.zod {
+	color: #3068B7 !important;
+}
