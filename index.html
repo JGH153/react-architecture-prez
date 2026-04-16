@@ -253,7 +253,8 @@
 						<h2><span class="react">React</span> Server Components</h2>
 						<pre
 							class="fragment"
-						><code class="language-typescript">export default async function Posts() {
+						><code class="language-typescript" data-trim  data-line-numbers="1-12|1|2">
+export default async function Posts() {
   const posts = await db.post.findMany({
     orderBy: { createdAt: 'desc' },
     take: 10,
@@ -264,7 +265,8 @@
       {posts.map(p => <li key={p.id}>{p.title}</li>)}
     </ul>
   );
-}</code></pre>
+}
+</code></pre>
 					</section>
 					<section>
 						<h2><span class="react">React</span> Server Components ✅</h2>
