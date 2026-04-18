@@ -469,6 +469,12 @@ export const simulateGame = ({
 					</section>
 				</section>
 				<section>
+					<h1>Testing 🧪</h1>
+					<h2 class="fragment"><span class="vitest">Vitest</span></h2>
+					<h2 class="fragment"><span class="playwright">Playwright</span></h2>
+					<h2 class="fragment"><span class="architecture">Stubbet</span></h2>
+				</section>
+				<section>
 					<section data-auto-animate>
 						<h1><span class="ai">AI</span> elefanten i rommet</h1>
 						<h2 class="fragment">
@@ -578,7 +584,11 @@ export const simulateGame = ({
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				// for logiteck spotlight
+				keyboard: {
+					39: 'navigateNext', // Intercepts the Spotlight's 'Right Arrow' and forces a linear Next
+					37: 'navigatePrev', // Intercepts the Spotlight's 'Left Arrow' and forces a linear Back
+				},
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
 			});
