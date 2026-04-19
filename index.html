@@ -307,7 +307,7 @@ export default async function Posts() {
 					</section>
 					<section>
 						<h1><span class="date-fns">Date-fns</span> 📅</h1>
-						<h2 class="fragment">Temporal really <span class="success">soon</span></h2>
+						<h2 class="fragment">Temporal veldig <span class="success">snart</span></h2>
 						<pre
 							class="fragment"
 						><code class="language-typescript">const now = Temporal.Now.plainDateTimeISO();
@@ -456,7 +456,10 @@ export const MusicProvider = ({ children }: { children: React.ReactNode }) => {.
 						<h2 class="typescript">Types</h2>
 						<h2 class="fragment">Unngå <span class="error">d.ts</span></h2>
 						<h2 class="fragment architecture">Co-locate!</h2>
-						<pre class="fragment"><code class="language-typescript">export type SimulationState = {
+						<pre
+							class="fragment"
+						><code class="language-typescript" data-trim data-line-numbers="|1-3|5-9">
+export type SimulationState = {
   buildings: Building[];
 };
 
@@ -465,6 +468,25 @@ export const simulateGame = ({
 }: {
   state: SimulationState;
 }): void => {};
+						</code></pre>
+					</section>
+					<section>
+						<h2>Eksempel <span class="architecture">mappestruktur</span></h2>
+						<pre><code class="language-bash" data-trim data-line-numbers="|2-4|5-7|8-13">
+app/
+├── pages/
+│   ├── HomePage.tsx
+│   └── components/
+│── components/
+│   ├── Button.tsx
+│   └── Header.tsx
+├── hooks/
+│   └── use-debounce.ts
+├── utils/
+│   └── format-date.ts
+├── types/
+│   └── shared.ts
+└── root.tsx
 						</code></pre>
 					</section>
 				</section>
@@ -477,9 +499,6 @@ export const simulateGame = ({
 				<section>
 					<section data-auto-animate>
 						<h1><span class="ai">AI</span> elefanten i rommet</h1>
-						<h2 class="fragment">
-							<!-- <span class="error">Produktivitet</span> over <span class="success">resultater</span> -->
-						</h2>
 						<h2 class="fragment">Vi er nå <span class="architecture">systemutviklere</span></h2>
 						<h2 class="fragment">Flom av <span class="error">ulest</span> kode</h2>
 					</section>
