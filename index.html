@@ -139,9 +139,9 @@
 					</section>
 					<section>
 						<h1>Det var <span class="error">ikke gøy</span></h1>
-						<h2 class="fragment">
+						<!-- <h2 class="fragment">
 							<span class="graphql">GraphQL</span> fremfor <span class="rest">REST</span>
-						</h2>
+						</h2> -->
 						<!-- <h2 class="fragment">Giga <span class="react">React</span> context</h2> -->
 						<h2 class="fragment">
 							<span class="error">Preview</span>, <span class="error">rollback</span> eller
@@ -171,7 +171,7 @@
 						<h2 class="fragment">Nytt <span class="error">blod</span> 🩸</h2>
 						<h2 class="fragment">Alt hang i <span class="error">designsystemet</span></h2>
 						<h2 class="fragment designer">DX og UX</h2>
-						<h2 class="fragment">Noen valg var <span class="error">permanente</span></h2>
+						<!-- <h2 class="fragment">Noen valg var <span class="error">permanente</span></h2> -->
 					</section>
 
 					<section>
@@ -473,12 +473,13 @@ export const simulateGame = ({
 					</section>
 					<section>
 						<h2>Eksempel <span class="architecture">mappestruktur</span></h2>
-						<pre><code class="language-bash" data-trim data-line-numbers="|2-4|5-7|8-13">
+						<pre><code class="language-bash" data-trim data-line-numbers="|2-5|6-8|9-14">
 app/
 ├── pages/
-│   ├── HomePage.tsx
-│   └── components/
-│── components/
+│   └── home/
+│       ├── HomePage.tsx
+│       └── components/
+├── components/
 │   ├── Button.tsx
 │   └── Header.tsx
 ├── hooks/
@@ -487,7 +488,6 @@ app/
 │   └── format-date.ts
 ├── types/
 │   └── shared.ts
-└── root.tsx
 						</code></pre>
 					</section>
 				</section>
@@ -546,7 +546,7 @@ app/
 							Tech Stack + <span class="architecture">Arkitektur</span> oversikt
 						</h2>
 						<h2 class="fragment">
-							Project <span class="architecture">Struktur</span>, ikke alle filer
+							Prosjekt <span class="architecture">Struktur</span>, ikke alle filer
 						</h2>
 						<h2 class="fragment">Kode <span class="architecture">Konvensjoner</span></h2>
 						<h2 class="fragment">Testing <span class="architecture">Strategi</span></h2>
